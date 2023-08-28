@@ -1,0 +1,46 @@
+
+html, body{
+background: #111;
+height: 100vh;
+width: 100%;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.logo {
+font-size: 110px;
+margin-bottom: 50px;
+color: #fff;
+}
+.progress{
+width: 300px;
+max-width: 85vw;
+height: 6px;
+bottom: 20vh;
+border-radius: 4px;
+background: rgba(255,255,255,0.5);
+overflow: hidden;
+}
+.progress::after{
+content: '';
+display: block;
+width: 100px;
+height: 6px;
+background:  #fff;
+animation:  load 5s linear forwards;
+}
+@keyframes load {
+  0% { width: 0; }
+  10% { width: 5%; }
+  20% { width: 12%; }
+  30% { width: 20%; }
+  40% { width: 29%; }
+  50% { width: 39%; }
+  60% { width: 50%; }
+  70% { width: 62%; }
+  80% { width: 75%; }
+  90% { width: 89%; }
+  100% { width: 100%; }
+}
