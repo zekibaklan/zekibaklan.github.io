@@ -60,6 +60,35 @@
 .card:hover .img-fluid {
     transform: scale(1.1);
 }
+/* Mobil uyumlu stil kuralları */
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .p-5 {
+        padding: 1rem;
+    }
+
+    .card .img-fluid {
+        width: 100%;
+        height: 550px;
+        transition: none;
+        margin-top: 1rem;
+    }
+
+    .typography-headline-reduced {
+        font-size: 24px;
+    }
+}
+
+
 
 h2 {
     display: block;
@@ -130,7 +159,7 @@ h2 {
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
       <div class="container px-5">
           <div class="d-flex justify-content-between align-items-center w-100">
-              <a class="navbar-brand" href="index.html"><span class="bi bi-apple"></span></a>
+              <a class="navbar-brand" href="zeki.html"><span class="bi bi-apple"></span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -153,8 +182,6 @@ h2 {
           </div>
       </div>
   </nav>
-
-
                 </div>
             </nav>
             <!-- Projects Section-->
