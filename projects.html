@@ -39,7 +39,28 @@
     margin-top: 68px;
     word-wrap: break-word;
     text-align: center;
+}/* Kartın bozulmadan ölçeklenmesini sağlamak için gereken stil kuralları */
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
+
+.card .card-body {
+    flex: 1;
+    overflow: hidden;
+}
+
+.card .img-fluid {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .img-fluid {
+    transform: scale(1.1);
+}
+
 h2 {
     display: block;
     font-size: 1.5em;
@@ -106,32 +127,38 @@ h2 {
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
-      <div class="container px-5">
-          <div class="d-flex justify-content-between align-items-center w-100">
-              <a class="navbar-brand" href="index.html"><span class="bi bi-apple"></span></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="zeki.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="zeki.html#about-me">About</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
+
+              <i class="fa-brands fa-apple"></i>
+                <div class="container px-5">
+                  <a class="navbar-brand" href="zeki.html"><span class="bi bi-apple"></span></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_large.svg" width="45" height="45" alt="">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav col justify-content-around">
+            <li class="nav-item active">
+                <a class="nav-link" href="zeki.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="zeki.html#about-me">About Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
                 </div>
             </nav>
@@ -163,6 +190,9 @@ h2 {
                                     </div>
                                 </div>
                             </div>
+
+
+
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-0">
                                     <div class="d-flex align-items-center">
@@ -296,7 +326,7 @@ h2 {
                                     <div class="d-flex align-items-center">
                                         <div class="p-5">
                                               <h2 class="typography-headline-reduced">Tipsy</h2>
-                                            <p>Now it's time for some fun in the world of gastronomy! The new way to go to the restaurant with Tipsy: How many people do you have, we take care of the calculations. If you want, we'll calculate the tip amount in addition to your per person payment amount, so say goodbye to the hassle of paying the bill! Both fun and practical! Who says paying bills has to be boring?</p>
+                                            <p>Now it's time for some fun in the world of gastronomy! The new way to go to the restaurant with Tipsy: How many people do you have, we take care of the calculations. If you want, we'll calculate the tip amount in addition to your per person payment amount, so say goodbye to the hassle of paying the bill!</p>
                                             <a class="text-dark" href="https://github.com/zekibaklan/7-Tipsy"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
                                             <a class="text-dark" href="https://www.youtube.com/watch?v=JnLzru7naV4"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
                                         </div>
