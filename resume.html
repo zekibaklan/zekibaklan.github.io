@@ -38,6 +38,23 @@ font-weight: 600;
 letter-spacing: -0.003em;
 font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body .department-name {
+    flex-grow: 0; /* Bölüm ismini sabit tutar */
+}
+
+.card-body .fst-italic {
+    margin-top: auto; /* Diğer bilgileri alt tarafa itecektir */
+}
+
+
+
+
 .typography-headline-elevatar {
 font-size: 27px;
 line-height: 1.08349;
@@ -164,13 +181,14 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
                         <!-- Experience Section-->
                         <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                </div>
+                            <div class="d-flex align-items-center justify-content-between mb-0">
 
 
                                 <h1 class="as-page-titlar__heading typography-headline-elevatar">Certificates</h1>
                                 <a class="btn btn-dark px-4 py-3" href="assets/zekibaklanCV.pdf" download="zekibaklanCV.pdf" target="_blank">
                               <div class="d-inline-block bi bi-download me-2"></div>
-                              Download Resume (TR)
+                              Download Resume
                               </a>
 
                                 <!-- Download resume button-->
@@ -179,161 +197,230 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
 
                             </div>
                             <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Boost Your App Bootcamp</div>
-                                                <div class="small fw-bolder">Rise In</div>
-                                                <div class="small text-muted">Oct, 2023</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Superteam TR's hackathon process that started in September was very good. ⚡️ I had a lot of ideas in this 2-month period. It is a great feeling again to develop a purposeful application from scratch. My ideas became concrete on the way to sacrifice and build my future. I became a part of it. I am proud of myself and SuperTeamTurkey, we have just started.
+                            <!-- Sertifikalar Grid Yapısı -->
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Cenoa Freelancer Bootcamp</div>
+                  <div class="small fw-bolder">Cenoa & Coderspace</div>
+                  <div class="small text-muted">Feb, 2025</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">SwiftUI Masterclass</div>
+                  <div class="small fw-bolder">Credo Academy</div>
+                  <div class="small text-muted">Oct, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Boost Your App Bootcamp</div>
+                  <div class="small fw-bolder">Rise In</div>
+                  <div class="small text-muted">Oct, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">BTK iOS Programlama SwiftUI</div>
+                  <div class="small fw-bolder">BTK Akademi</div>
+                  <div class="small text-muted">Sep, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">iOS App Development Bootcamp</div>
+                  <div class="small fw-bolder">London App Brewery</div>
+                  <div class="small text-muted">Aug, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Sosyal Medya Kullanımı</div>
+                  <div class="small fw-bolder">Turkcell</div>
+                  <div class="small text-muted">May, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Mobil Uygulama Kullanımı</div>
+                  <div class="small fw-bolder">Turkcell</div>
+                  <div class="small text-muted">May, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Dijital Okuryazarlık</div>
+                  <div class="small fw-bolder">Turkcell</div>
+                  <div class="small text-muted">May, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Turkcell Swift 101-201-301</div>
+                  <div class="small fw-bolder">Turkcell</div>
+                  <div class="small text-muted">Feb, 2023</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">BTK iOS Programlama Swift</div>
+                  <div class="small fw-bolder">BTK Akademi</div>
+                  <div class="small text-muted">Dec, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">ODTÜ iOS Programlama Swift</div>
+                  <div class="small fw-bolder">Bilgeiş</div>
+                  <div class="small text-muted">Sep, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">İletişim Becerileri</div>
+                  <div class="small fw-bolder">Elginkan Vakfı</div>
+                  <div class="small text-muted">Mar, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Kişilik Analizi ve Çatışma Yönetimi</div>
+                  <div class="small fw-bolder">Elginkan Vakfı</div>
+                  <div class="small text-muted">Mar, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Zaman Yönetimi</div>
+                  <div class="small fw-bolder">Elginkan Vakfı</div>
+                  <div class="small text-muted">Feb, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Yapay Zeka ve Geleceğin Teknolojisi</div>
+                  <div class="small fw-bolder">Bissatek</div>
+                  <div class="small text-muted">Feb, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Nesne Yönelimli Programlama - Python</div>
+                  <div class="small fw-bolder">Elginkan Vakfı</div>
+                  <div class="small text-muted">Jan, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Certified Microsoft Innovative Educator</div>
+                  <div class="small fw-bolder">Microsoft</div>
+                  <div class="small text-muted">Jan, 2022</div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-primary fw-bolder mb-2">Yapay Zeka ve Dijital Pazarlama</div>
+                  <div class="small fw-bolder">Bissatek</div>
+                  <div class="small text-muted">Dec, 2021</div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">iOS App Development Bootcamp</div>
-                                                <div class="small fw-bolder">London App Brewery</div>
-                                                <div class="small text-muted">Agust, 2023</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>This bootcamp experience was one of the most valuable steps in my career. I had the opportunity to learn by using basic tools such as Xcode, UIKit and SwiftUI in real projects. It was hugely exciting to popularize augmented reality and machine-based applications with advanced technologies like ARKit and CoreML. I plan to share what I've learned on my GitHub profile, and using app marketing knowledge on the App Store has helped me a lot with their apps. Using 60 this tutorial helped me improve my iOS development skills significantly.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">BTK SwiftUI ile iOS Programlama</div>
-                                                <div class="small fw-bolder">London App Brewery</div>
-                                                <div class="small text-muted">Sept, 2023</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>This course allowed me to learn the basics necessary for SwiftUI.This was a good training to improve myself.I learned the necessary basic skills here</div></div>
-                                    </div>
-                                </div>
-                            </div>
+           </div>
 
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Turkcell Swift ile iOS Programlama 101-201-301</div>
-                                                <div class="small fw-bolder">Turkcell</div>
 
-                                                <div class="small text-muted">Feb, 2023</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>It is a very difficult course, although it is a lot of fun. It was a course that really solidified my ios application foundation. Here as a new talent, I learned and developed the skills of researching solutions online and communicating with experienced people. I earned a total of 9 certificates in this course.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">BTK Swift ile iOS Programlama</div>
-                                                <div class="small fw-bolder">BTK Akademi</div>
-                                                <div class="small text-muted">Dec, 2022</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>In this tutorial I started slowly creating my first application sketch. It allowed me to work on basic skills. I learned the basics of tableview views that we see in almost every application and more in this tutorial.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">ODTÜ Swift ile iOS Programlama</div>
-                                                <div class="small fw-bolder">Bilgeiş</div>
-                                                <div class="small text-muted">Sept, 2022</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>I can say that I improved my basic swift knowledge with this course. It had really enjoyable content and I adapted.</div></div>
-                                    </div>
-                                </div>
-                            </div>
+
+
+
+
                         </section>
                         <!-- Education Section-->
                         <section>
                               <h2 class="as-page-titlar__heading typography-headline-elevatar">Education</h2>
                             <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">Electronics and Communication Engineering</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Kocaeli University</div>
-                                                    <div class="small text-muted">Izmit, Kocaeli</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate Degree</div>
-                                                    <div class="small text-muted">2021 - 2024</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Engineering is my dream job. You must have realized how much I love electronics. Communication feels like such a mystical, invisible power and has many different fields. My preference was iOS Software Development in the software industry. I feel like at home..</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">Electronics Technology</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Ege University</div>
-                                                    <div class="small text-muted">Bornova, Izmir</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Associate Degree</div>
-                                                    <div class="small text-muted">2014 - 2018</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Here we were mostly doing experiments on projects. Oscilloscope and other electronic experiments. My project that we would integrate into our own lives: "Helmet wipers that work in rainy weather when accelerating". I had a motorcycle in those years :) . I was successful in C++ and I loved it.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">Electrical and Electronics Technology</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Gulay Kaynak Technical High School</div>
-                                                    <div class="small text-muted">Pamukkale, Denizli</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">High School Degree</div>
-                                                    <div class="small text-muted">2014 - 2018</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>I met electronics in high school. I never knew it would be a part of my life. Here I made the first project in my professional life: "DC Power Supply". I learned C, my first programming language, in high school. You know, binary numbers had a very strange way of calculating and I could understand it.</div></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Education Card 1 -->
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-secondary fw-bolder mb-2">Electronics and Communication Engineering</div>
+                  <div class="small fw-bolder">Kocaeli University</div>
+
+                  <div class="fst-italic">
+                      <div class="small text-muted">Bachelor Degree</div>
+                      <div class="small text-muted">2021 - 2024</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Education Card 2 -->
+      <div class="col">
+        <div class="card h-100 shadow border-0 rounded-4">
+            <div class="card-body p-4">
+                <div class="text-secondary fw-bolder mb-2 department-name">Electronics Technology</div>
+                <div class="small fw-bolder">Ege University</div>
+                <div class="fst-italic">
+                    <div class="small text-muted">Associate Degree</div>
+                    <div class="small text-muted">2014 - 2018</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Education Card 3 -->
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="text-secondary fw-bolder mb-2">Electrical and Electronics Technology</div>
+                  <div class="small fw-bolder">Gulay Kaynak Technical High School</div>
+
+                  <div class="fst-italic">
+                      <div class="small text-muted">High School Degree</div>
+                      <div class="small text-muted">2010 - 2014</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
                         </section>
                         <!-- Divider-->
                         <div class="pb-5"></div>
@@ -348,25 +435,47 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
                                             <div class="feature bg-primary bg-dark text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
                                               <h2 class="as-page-titlar__heading typography-headline-elevatar">Professional Skills</h2>
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">ARKit</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CoreML</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MVC</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">UI / UIKit</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Service</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">UX</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                        <div class="row row-cols-1 row-cols-md-6 mb-4">
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">ARKit</div></div>
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CoreML</div></div>
+    <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MVVM</div></div>
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">UX</div></div>
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Figma</div></div>
+    <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Clean Code</div></div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-6 mb-4">
+
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Architecture</div></div>
+    <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Service</div></div>
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Multisim</div></div>
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Altium</div></div>
+    <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">UI / UIKit</div></div>
+    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database</div></div>
+
+</div>
+
+
+
+
+                                        <div class="row row-cols-1 row-cols-md-6 mb-4">
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CoreData</div></div>
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MapKit</div></div>
                                             <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">WatchOS</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Firebase</div></div>
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">API</div></div>
                                             <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Realm</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-6 mb-4">
+                                              <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">iOS Engineering</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Embedded Systems</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Microstrip Antenna</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MIMO Antenna</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Analog Communication</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Digital Communication</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+
                                         </div>
                                     </div>
                                     <!-- Languages list-->
@@ -376,15 +485,22 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
                                               <h2 class="as-page-titlar__heading typography-headline-elevatar">Languages</h2>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Swift</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Swift/UI</div></div>
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Objective-C</div></div>
                                             <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C++</div></div>
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
                                             <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C#</div></div>
                                         </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MatLAB</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CST</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Assembly</div></div>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>

@@ -1,770 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Zeki Baklan - Portfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
-        body, input, textarea, select, button {
-    font-synthesis: none;
-    -moz-font-feature-settings: 'kern';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    direction: ltr;
-    text-align: left;
-}
-.typography-headline-elevated {
-    font-size: 48px;
-    line-height: 1.08349;
-    font-weight: 600;
-    letter-spacing: -0.003em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-.as-page-title {
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-    margin-top: 68px;
-    word-wrap: break-word;
-    text-align: center;
-}/* Kartın bozulmadan ölçeklenmesini sağlamak için gereken stil kuralları */
-.card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
 
-.card .card-body {
-    flex: 1;
-    overflow: hidden;
-}
-
-.card .img-fluid {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover .img-fluid {
-    transform: scale(1.1);
-}
-/* Mobil uyumlu stil kuralları */
-@media (max-width: 576px) {
-    .card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card .d-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card .p-5 {
-        padding: 1rem;
-    }
-
-    .card .img-fluid {
-        width: 100%;
-        height: 400px;
-        transition: none;
-        margin-top: 1rem;
-    }
-
-    .typography-headline-reduced {
-        font-size: 24px;
-    }
-}
-
-
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-      .dd-billboard-header {
-        font-size: 32px;
-      line-height: 1.125;
-      font-weight: 600;
-      letter-spacing: 0.004em;
-      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+      Zeki Baklan - Portfolio
+    </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      body, input, textarea, select, button { font-synthesis: none; -moz-font-feature-settings:
+      'kern'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+      direction: ltr; text-align: left; } .typography-headline-elevated { font-size:
+      48px; line-height: 1.08349; font-weight: 600; letter-spacing: -0.003em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif; } .as-page-title { margin-left: auto; margin-right:
+      auto; width: 980px; margin-top: 68px; word-wrap: break-word; text-align:
+      center; }/* Kartın bozulmadan ölçeklenmesini sağlamak için gereken stil
+      kuralları */ .card { display: flex; flex-direction: row; align-items: center;
+      overflow: hidden; border: 1px solid #e0e0e0; border-radius: 8px; background-color:
+      #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s
+      ease-in-out; } .card:hover { transform: translateY(-5px); } .card-body
+      { flex: 1; padding: 20px; } .card img { width: 150px; /* Görselin genişliği
+      küçültüldü */ height: auto; border-radius: 0 8px 8px 0; } .card h2 { font-size:
+      24px; margin-bottom: 10px; color: #333; } .card .links { display: flex;
+      gap: 15px; } .card .links a { color: #333; text-decoration: none; font-size:
+      18px; transition: color 0.3s ease; } @media (max-width: 768px) { .card { flex-direction: column; text-align:
+      center; } .card img { width: 100%; border-radius: 8px 8px 0 0; } .card-body
+      { padding: 15px; } .card h2 { font-size: 20px; } .card .links { justify-content:
+      center; } } .typography-headline-reduced { font-size: 24px; } } h2 { display:
+      block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end:
+      0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight:
+      bold; } .dd-billboard-header { font-size: 32px; line-height: 1.125; font-weight:
+      600; letter-spacing: 0.004em; font-family: "SF Pro Display", "SF Pro Icons",
+      "Helvetica Neue", "Helvetica", "Arial", sans-serif; } .as-richtext { color:
+      #444444; position: relative; word-break: break-word; } .typography-headline-elevated
+      { font-size: 64px; line-height: 1; font-weight: 400; letter-spacing: -0.009em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif; } .rf-ccard-content-desc { font-size: 17px; line-height:
+      1.23536; font-weight: 400; letter-spacing: -.022em; font-family: SF Pro
+      Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+      color: #1d1d1f; padding-top: 10px; margin-top: 0; } .dd-compact-right-large-8
+      { margin-right: 8%!important; }z .typography-compare-tagline { font-size:
+      12px; line-height: 1.33337; font-weight: 400; letter-spacing: -.01em; font-family:
+      "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      } .dd-compact-large-22 .dd-billboard-header { display: inline; } .dd-billboard-subcopy
+      { font-size: 17px; line-height: 1.381; font-weight: 310; letter-spacing:
+      .011em; font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
       }
+    </style>
+  </head>
 
-
-      .as-richtext {
-        color: #444444;
-    position: relative;
-    word-break: break-word;
-}
-.typography-headline-elevated {
-    font-size: 64px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: -0.009em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-      .rf-ccard-content-desc {
-    font-size: 17px;
-    line-height: 1.23536;
-    font-weight: 400;
-    letter-spacing: -.022em;
-    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: #1d1d1f;
-    padding-top: 10px;
-    margin-top: 0;
-}
-      .dd-compact-right-large-8 {
-    margin-right: 8%!important;
-}z
-.typography-compare-tagline {
-    font-size: 12px;
-    line-height: 1.33337;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-      .dd-compact-large-22 .dd-billboard-header {
-    display: inline;
-}
-.dd-billboard-subcopy {
-    font-size: 17px;
-    line-height: 1.381;
-    font-weight: 310;
-    letter-spacing: .011em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-  </style>
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
-      <div class="container px-5">
+  <body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <div class="container px-5">
           <div class="d-flex justify-content-between align-items-center w-100">
-              <a class="navbar-brand" href="zeki.html"><span class="bi bi-apple"></span></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
+            <a class="navbar-brand" href="zeki.html">
+              <span class="bi bi-apple">
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+              </span>
+            </button>
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="zeki.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="zeki.html#about-me">About</a>
-                  </li>
-              </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="zeki.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="zeki.html#about-me">
+                  About
+                </a>
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
       </div>
-  </nav>
-                </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                    <h1 class="as-page-title__heading typography-headline-elevated">Projects</h1>
+      </nav>
+      <!-- Projects Section-->
+      <section class="py-5">
+        <div class="container px-5 mb-5">
+          <div class="text-center mb-5">
+            <h1 class="as-page-title__heading typography-headline-elevated">
+              Projects
+            </h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Dual Band MIMO Antenna</h2>
+            <div class="links">
+
+                <a href="https://github.com/zekibaklan/xxxxx" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1AsjxYFW1gV8HUMYaLYlEnVsvzwu6RI00/view" target="_blank">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="Google Drive" style="width: 18px; height: 18px;">
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/5g.png" alt="Birthday Reminder" />
+    </div>
+</div>
+            <div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Karaca Consept UI</h2>
+            <div class="links">
+
+                <a href="https://github.com/zekibaklan/Karaca_Consept_MobileApp" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=J-S9lDEN9Oo&t=1s" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/karaca.png" alt="Birthday Reminder" />
+    </div>
+</div>
+            <div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Temperature Control System</h2>
+            <div class="links">
+
+                <a href="https://github.com/zekibaklan/xxxxxx" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=UX-0UtU3znI" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/air.png" alt="Birthday Reminder" />
+    </div>
+</div>
+            <div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Birthday Reminder</h2>
+            <div class="links">
+
+                <a href="https://github.com/zekibaklan/Birthday-Reminder" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=Fp98-snRuFA&t=1s" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <img src="assets/bday.png" alt="Birthday Reminder" />
+    </div>
+</div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>iOS Robocar</h2>
+                        <div class="links">
+                            <a href="https://github.com/zekibaklan/iOS-Robocar" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=mpgKYw18wqw" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-
-                                          <h2 class="typography-headline-reduced">NETFLIX_CLONE UI</h2>
-
-
-                                          <div class="as-richtext"><p>
-I successfully completed a Netflix iOS mobile clone, and it was truly enjoyable. Unlike my other projects, this process required tackling some intricate aspects, but behind each challenge, there was a valuable learning experience. With the achieved success, the satisfaction I feel at every stage of the project is truly precious.🎬🍿</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/NETFLIX_App"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=upgc5PiSZRs"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/netflix.png" alt="Pinch Resmi" width="300" height="400"/>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                        <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-
-
-                                          <h2 class="typography-headline-reduced">HONEYMOON UI</h2>
-
-
-                                          <div class="as-richtext"><p>I designed an advanced app for iOS and iPadOS and improved the user experience. I designed Start Screen, App Icons, reusable UI components, Guide and Info screens. I optimized the development process by organizing file structures, added gesture and mode support with SwiftUI.🛬🏝️⛱️</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/HONEYMOON-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://youtu.be/V_8Kq_h7BzQ"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/honeymoon.png" alt="Pinch Resmi" width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">TODO UI</h2>
-
-
-                                          <div class="as-richtext"><p>
-I developed a Todo application using Core Data and SwiftUI. I learned how to store, retrieve and update data in the local database. I practiced improving the interface and adding new features with SwiftUI. This process helped me gain experience in application development.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/TODO-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://youtu.be/rt1iKWnkfsI"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/todo.png" alt="Pinch Resmi" width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">SLOT MACHINE UI</h2>
-
-
-                                          <div class="as-richtext"><p>Developing iPhone, iPad and Macintosh games is really inspiring for me. Making Mac apps with the Mac Catalyst framework and using User Defaults to permanently store user preferences is also important. Also, using sound effects and custom skin modifiers to further enrich the user experience is becoming an enjoyable practice for me.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/SLOT-MACHINE-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://youtu.be/rSGxmOhXMY4"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/slotmachine.png" alt="Pinch Resmi" width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">AVOCADOS UI</h2>
-
-
-                                          <div class="as-richtext"><p>
-Organizing the app start screen, icons and Scroll Views excites me. Designing iOS apps with SwiftUI and creating Tab Views with custom icons is also a great motivator. Implementing vertical and horizontal layout design helps me deliver a user-friendly experience by increasing visual appeal.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/AVOCADOS-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=dW7Q858j9o0"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/avocado.png" alt="Pinch Resmi" width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">Developers UI</h2>
-
-
-                                          <div class="as-richtext"><p>It offers App Icons and easy-to-use UI components. Guides and Info screens, editing of file structures and support for SwiftUI, gestures and modes are the main advantages.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/Learn-By-Doing-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=j1dAIPUy7xc"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/developers.png" alt="Pinch Resmi" width="300" height="400"/>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">NOTES UI</h2>
-
-
-                                          <div class="as-richtext"><p>Developing an Apple Watch app is an exciting experience for me. Learning data serialization with the Codable protocol and being able to switch between views with SwiftUI are skills that enrich app development. Testing the Watch app in full screen and using different input tools also contributes to making the app user-friendly and interactive.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/NOTES-WATCHOS"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=YJhlQbDM7cA"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img  src="assets/note.png" alt="Pinch Resmi" width="300" height="400" />
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">DEVOTE UI</h2>
-
-
-                                          <div class="as-richtext"><p>
-Developing apps with SwiftUI and Core Data is fast, organized and enjoyable. Xcode's Core Data template helps me easily configure database transactions, while SwiftUI's @FetchRequest simplifies interaction. Widgets are a practical way to customize the user experience, and SwiftUI's blur and color overlay effects make the look attractive.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/DEVOTE-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=L5kiPOaBEvY"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img  src="assets/devote.png" alt="Pinch Resmi" width="300" height="400" />
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">TOUCHDOWN UI</h2>
-
-
-                                          <div class="as-richtext"><p>When developing apps, I'm excited about data control with @Environment and data management with Observable Object, personalizing the design with custom navigation, shape and constant value customizations, and ultimately delivering a great experience to my users.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/TOUCHDOWN-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=vFVfr81s32w"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/touchdown.png" alt="Pinch Resmi" width="300" height="400" />
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">AFRICA UI</h2>
-
-
-                                          <div class="as-richtext"><p>This app invites you on an exciting journey through Africa. As you wander through the savannah, you learn new information about multiple animals and can view them on the map with ANNOTATIONS. The sleek and user-friendly interface makes the experience easy and fun. This app is a great option for those who want to explore wildlife and gain new knowledge!" 🌍🦓🦁</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/AFRICA-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=h1NXEHTYPqY"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/africa.png" alt="Pinch Resmi" width="300" height="400" />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">FRUITS UI</h2>
-
-
-                                          <div class="as-richtext"><p>The Fruits app brings health and knowledge to your daily life by providing information about various fruits. Discover and measure the vitamin content of fruits and adopt a healthier fruit consumption habit. This app helps you learn about fruits and step into a healthier lifestyle.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/FRUITS-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=v-PW07SFX7c"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/fruits.png" alt="Pinch Resmi" width="300" height="400" />
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">PINCH UI</h2>
-
-
-                                          <div class="as-richtext"><p>I added features that enhance the user experience using SwiftUI gestures (long tap, double tap, drag, zoom). I also added material behind the view to add a blur effect and vibrancy. I further enriched the project with a drawer UI, SwiftUI materials, and a zoom in/out feature. In this project, I aimed to offer more interactivity and appeal to your users.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/PINCH-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=b1E9FA7hpiQ"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img  src="assets/pinch.png" alt="Pinch Resmi" width="300"height="400"/>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">RESTART UI</h2>
-
-
-                                          <div class="as-richtext"><p>Starting with a user-friendly UI, I added a paralax effect with animated scrolling left and right. On the second screen, I showed the meditation animation flying. I added sound and vibration effects to further enhance the user experience. This project combines advanced app design, complex Swift UI gestures and sensory experiences.</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/RESTART-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=pMbEY-PIGoo"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img  src="assets/restart.png" alt="..." width="300" height="400" />
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">HIKE UI</h2>
-
-
-                                          <div class="as-richtext"><p>  When creating my Hike App, I designed simple and expressive cards using Swift UI containers and reusable components. I also added gradient animations for visual appeal and seamless switching between light and dark modes. I aimed to provide a user-friendly and eye-catching experience!</p></div>
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/HIKE-UI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=wcJASGahfFQ"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/hike.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-
-
-                                          <h2 class="typography-headline-reduced">Birthday Reminder</h2>
-
-
-                                          <div class="as-richtext"><p>  I developed a birthday reminder app to help people like me who struggle with forgetting birthdays. (You know there are a lot of numbers😁) The app received positive feedback and was even accepted as part of my university's engineering design projects. It can be downloaded from the App Store. Feel free to check it out and have fun using it!</p></div>
-
-
-
-                                            <a class="text-dark" href="https://apps.apple.com/us/app/birthday-reminder-on-time/id6450901900?platform=iphone"target="_blank"><i class="bi bi-apple"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://github.com/zekibaklan/Birthday-Reminder"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=04UIpBsGrnM"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                          <img src="assets/bday.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">iOS Robocar</h2>
-
-                                                    <div class="as-richtext"> <p>This is my first mobile application! A robot car that can be controlled from anywhere in the world! Maybe we can see it getting awards at festivals in the future. When you want to use it, you can download the application and direct it from any country or city. It has a safety sensor that prevents accidents!
-  </p></div>
-
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/iOS-Robocar"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=uCaOdRo7DV8"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/robocar.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                              <h2 class="typography-headline-reduced">Magic Paper</h2>
-
-                                              <div class="as-richtext"><p>   A magical meeting with Muggle technology! While reading the news you will feel like you are in the magical world of Harry Potter. Enjoy the magical moments and you won't believe your eyes as you flip through the pages of the newspaper.⁺</p></div>
-
-
-
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/14-MagicPaper"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=nAkjhWJAENw"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/harry.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="typography-headline-reduced">Poke 3D</h2>
-                                            <p>I have always watched the Pokemon series and it has a place in my heart. It is impossible to forget the wonderful excitement I experienced with the release of Pokemon GO. Let's meet my pokemons. And here you are Eevee and Oddish! </p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/13-Poke3D"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=U_YrGZhvdNk"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/pokemon.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">AR Dicee</h2>
-                                            <p>With my AR Dicee rolling app, you can turn the real world into a playing field and experience a fun and realistic dice rolling experience by shaking or tapping your phone without the need for physical dice.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/12-AR-Dicee"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=6a55N_G2Eak"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/dice.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">AR Rule</h2>
-                                            <p>You can easily measure anything in three dimensions. Place the ruler wherever you want and watch the measurement results with pleasure. I combined virtual reality with measurements, combining fun and usefulness!</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/12-AR-Rule"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=Q-6gYqTxN-A&t=1s"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/rule.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">TellMe AI</h2>
-                                            <p>TellMe Ai, which I developed in the adventure of artificial intelligence. This ai model will surprise you with its ability to recognize objects. Show and Learn.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/11-TellMe-AI"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=qUMs3Xh6ZDs&t=4s"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/ai.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">FlashChat</h2>
-                                            <p>You can think of Flash Chat as the colorful and fun cousin of WhatsApp! He entered our lives with Facebook's $22 billion magic move out of his pocket. Firebase Firestore will dance in the background as our messages come and go in the cloud, meaning it will join the database party.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/10-FlashChat"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=9a0rEVT84xI"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                          <img src="assets/chat.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">ByteCoin</h2>
-                                            <p>The application tells you the current price of bitcoin in the currency you want. You can follow the increases and decreases during the day.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/9-ByteCoin"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=5vqRhcuDCdg"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                        <img src="assets/bitcoin.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                          <h2 class="typography-headline-reduced">Clima</h2>
-                                            <p>Learning weather forecasts at a glance is now much more enjoyable! My weather app supports both manual city searches and location checks based on GPS data, bringing you instant weather information. Practicality and speed come together.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/8-Clima"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=m_j4VqTGAxo"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/weather.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                              <h2 class="typography-headline-reduced">Tipsy</h2>
-                                            <p>Now it's time for some fun in the world of gastronomy! The new way to go to the restaurant with Tipsy: How many people do you have, we take care of the calculations. If you want, we'll calculate the tip amount in addition to your per person payment amount, so say goodbye to the hassle of paying the bill!</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/7-Tipsy"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=rhJpo_HBEqg"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/tipsy.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">BMI Calculator</h2>
-
-                                            <p>Measuring your health is now easier with the Body Mass Index calculator! You can calculate your body mass index according to your weight and height. Thanks to this feature, you can get to know yourself better and take a pleasant step into your healthy life journey.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/6-BMI.Calculator"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=WHUY16bFz1M"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/bmi.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="typography-headline-reduced">Quizzler</h2>
-                                            <p>With Quizzler, you can test your intelligence and have fun. You will have the opportunity to challenge your friends while improving your own score.</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/4-Quizzler"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=Bwp7J08X6kc"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/quiz.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">Egg Timer</h2>
-                                            <p>With the perfect Egg Timer that reflects your personal preferences, it is now easier to boil your eggs to the exact consistency you want, I am here for a perfect egg!</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/3-EggTimer"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=0ra32qHRZiY"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/egg.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                                <h2 class="typography-headline-reduced">Xylophone</h2>
-                                            <p>You can play any melody you want by creating your own sheet music. I like to listen to music, but when it comes to playing, umm... At least I can play the song "Look, the postman is coming".</p>
-                                            <a class="text-dark" href="https://github.com/zekibaklan/2-Xylophone"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=YTIPl9wsjiU"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/xylophone.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                          <h2 class="typography-headline-reduced">Calculator</h2>
-
-
-
-                                            <p>
-                                                      It's really fun to make a really useful calculator. Although it does not have functions for engineering use, it works for me to continue my life. The important thing is that I made it myself.
-                                                  </p>
-
-                                            <a class="text-dark" href="https://github.com/zekibaklan/1-Calculator"target="_blank"><i class="bi bi-github"style="font-size: 24px;"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a class="text-dark" href="https://www.youtube.com/watch?v=Q3hf3NCsdyU"target="_blank"><i class="bi bi-youtube"style="font-size: 24px;"></i></a>
-                                        </div>
-                                      <img src="assets/calculator.png" alt="..." width="300" height="400"/>
-                                    </div>
-                                </div>
-                            </div>
-
-
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-black text-white">
-
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">The future is here.</h2>
-
-                    </div>
+                    <img src="assets/robocar.png" alt="iOS Robocar" />
                 </div>
-            </section>
-        </main>
-        <!-- Footer-->
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    NETFLIX_CLONE UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/NETFLIX_App" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- HTML içeriği burada -->
+                  </div>
+                </div>
+                <img src="assets/netflix.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    HONEYMOON UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/HONEYMOON-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/honeymoon.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    TODO UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/TODO-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/todo.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    AVOCADOS UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/AVOCADOS-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/avocado.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    Developers UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/Learn-By-Doing-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/developers.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    NOTES UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/NOTES-WATCHOS" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/note.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    DEVOTE UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/DEVOTE-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/devote.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    TOUCHDOWN UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/TOUCHDOWN-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/touchdown.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    AFRICA UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/AFRICA-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/africa.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    FRUITS UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/FRUITS-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/fruits.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    PINCH UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/PINCH-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/pinch.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                    RESTART UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/RESTART-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/restart.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h2>
+                  HIKE UI
+                  </h2>
+                  <div class="links">
+                    <a href="https://github.com/zekibaklan/HIKE-UI" target="_blank">
+                      <i class="bi bi-github">
+                      </i>
+                    </a>
+
+                  </div>
+                </div>
+                <img src="assets/hike.png" alt="NETFLIX_CLONE" />
+              </div>
+            </div>
 
 
 
 
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Magic Paper</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/14-MagicPaper" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/harry.png" alt="Magic Paper" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Poke 3D</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/13-Poke3D" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/pokemon.png" alt="Poke 3D" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>AR Dicee</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/12-AR-Dicee" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/dice.png" alt="AR Dicee" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>AR Rule</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/12-AR-Rule" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/rule.png" alt="AR Rule" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>TellMe AI</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/11-TellMe-AI" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/ai.png" alt="TellMe AI" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>FlashChat</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/10-FlashChat" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/chat.png" alt="FlashChat" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>ByteCoin</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/9-ByteCoin" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/bitcoin.png" alt="ByteCoin" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Clima</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/8-Clima" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/weather.png" alt="Clima" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Tipsy</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/7-Tipsy" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/tipsy.png" alt="Tipsy" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>BMI Calculator</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/6-BMI.Calculator" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/bmi.png" alt="BMI Calculator" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Quizzler</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/4-Quizzler" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/quiz.png" alt="Quizzler" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Egg Timer</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/3-EggTimer" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/egg.png" alt="Egg Timer" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Xylophone</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/2-Xylophone" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/xylophone.png" alt="Xylophone" />
+    </div>
+</div>
+
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h2>Calculator</h2>
+            <div class="links">
+                <a href="https://github.com/zekibaklan/1-Calculator" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+        </div>
+        <img src="assets/calculator.png" alt="Calculator" />
+    </div>
+</div>
+      </section>
+      <!-- Call to action section-->
+      <section class="py-5 bg-black text-white">
+        <div class="container px-5 my-5">
+          <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">
+              The future is here.
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- HTML içeriği burada -->
+    <!-- Core theme JS-->
+    <script src="js/scripts.js">
+    </script>
+  </body>
+
 </html>
