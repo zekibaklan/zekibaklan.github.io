@@ -43,6 +43,14 @@ font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "A
     flex-direction: column;
     height: 100%;
 }
+.vestel-electronics-text {
+     color: #FF0000;
+}
+
+.education-title-green {
+    color:#006747/* Yeşil renk */
+}
+
 
 .card-body .department-name {
     flex-grow: 0; /* Bölüm ismini sabit tutar */
@@ -53,7 +61,25 @@ font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "A
 }
 
 
+.certificate-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Logolar arasındaki boşluğu eşitler */
+    padding: 20px 0; /* Üst ve alt boşluğu dengeler */
+}
 
 .typography-headline-elevatar {
 font-size: 27px;
@@ -176,6 +202,23 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
               <div class="text-center mb-5">
               <h1 class="as-page-title__heading typography-headline-elevated">Resume</h1>
               </div>
+              <div class="d-flex justify-content-center gap-4 my-5 ">
+<img src="assets/Garanti.png" alt="Garanti BBVA Logo" class="certificate-logo">
+<img src="assets/turkcell.png" alt="Coderspace Logo" class="certificate-logo">
+<img src="assets/Microsoft.png" alt="Coderspace Logo" class="certificate-logo">
+<img src="assets/Coderspace.png" alt="Coderspace Logo" class="certificate-logo">
+
+<img src="assets/Cenoa.png" alt="Coderspace Logo" class="certificate-logo">
+<img src="assets/Credo.png" alt="Coderspace Logo" class="certificate-logo">
+  <img src="assets/risein.png" alt="Coderspace Logo" class="certificate-logo">
+        <img src="assets/btk.png" alt="Coderspace Logo" class="certificate-logo">
+          <img src="assets/london.png" alt="Coderspace Logo" class="certificate-logo">
+
+            <img src="assets/bilge.png" alt="Coderspace Logo" class="certificate-logo">
+            <img src="assets/Elginkan.png" alt="Coderspace Logo" class="certificate-logo">
+              <img src="assets/Bissatek.png" alt="Coderspace Logo" class="certificate-logo">
+
+</div>
                 <div class="row gx-5 justify-content-center">
 
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -186,19 +229,64 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
 
 
                                 <h1 class="as-page-titlar__heading typography-headline-elevatar">Certificates</h1>
-                                <a class="btn btn-dark px-4 py-3" href="assets/zekibaklanCV.pdf" download="zekibaklanCV.pdf" target="_blank">
+                                <a class="btn btn-dark px-4 py-1" href="assets/zekibaklanCV.pdf" download="zekibaklanCV.pdf" target="_blank">
                               <div class="d-inline-block bi bi-download me-2"></div>
                               Download Resume
                               </a>
 
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
 
 
                             </div>
+                            <!-- Download resume button-->
+
                             <!-- Experience Card 1-->
                             <!-- Sertifikalar Grid Yapısı -->
                             <div class="row row-cols-1 row-cols-md-3 g-4">
+                              <div class="col">
+                                  <div class="card h-100 shadow border-0 rounded-4">
+                                      <div class="card-body p-4">
+                                          <div class="text-primary fw-bolder mb-2">Garanti BBVA - Teknoloji Serisi</div>
+                                          <div class="small fw-bolder">Coderspace</div>
+                                          <div class="small text-muted">March, 2025</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card h-100 shadow border-0 rounded-4">
+                                      <div class="card-body p-4">
+                                          <div class="text-primary fw-bolder mb-2">Garanti BBVA - Serdar Kuzuoğlu Seminer</div>
+                                          <div class="small fw-bolder">Coderspace</div>
+                                          <div class="small text-muted">March, 2025</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card h-100 shadow border-0 rounded-4">
+                                      <div class="card-body p-4">
+                                          <div class="text-primary fw-bolder mb-2">Garanti BBVA - Siber Güvenlik Eğitimi</div>
+                                          <div class="small fw-bolder">Coderspace</div>
+                                          <div class="small text-muted">March, 2025</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card h-100 shadow border-0 rounded-4">
+                                      <div class="card-body p-4">
+                                          <div class="text-primary fw-bolder mb-2">Garanti BBVA - RPA Eğitimi</div>
+                                          <div class="small fw-bolder">Coderspace</div>
+                                          <div class="small text-muted">March, 2025</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card h-100 shadow border-0 rounded-4">
+                                      <div class="card-body p-4">
+                                          <div class="text-primary fw-bolder mb-2">Garanti BBVA - Yapay Zeka Eğitimi</div>
+                                          <div class="small fw-bolder">Coderspace</div>
+                                          <div class="small text-muted">March, 2025</div>
+                                      </div>
+                                  </div>
+                              </div>
       <div class="col">
           <div class="card h-100 shadow border-0 rounded-4">
               <div class="card-body p-4">
@@ -371,7 +459,58 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
 
 
                         </section>
-                        <!-- Education Section-->
+                        <!-- Employment Section-->
+                        <section>
+                              <h2 class="as-page-titlar__heading typography-headline-elevatar employment-text">Employment</h2>
+                            <!-- Employment Card 1-->
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Employment Card 1 -->
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="vestel-electronics-text fw-bolder mb-2">Vestel Electronics</div>
+                  <div class="small fw-bolder">Embedded System Software Intern</div>
+
+                  <div class="fst-italic">
+                      <div class="small text-muted">Electric Vehicle Charging</div>
+                      <div class="small text-muted">2024 - 2024</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow border-0 rounded-4">
+            <div class="card-body p-4">
+                  <div class="vestel-electronics-text fw-bolder mb-2">Vestel Electronics</div>
+                <div class="small fw-bolder">System Design Engineering Intern</div>
+                <div class="fst-italic">
+                    <div class="small text-muted">Electric Vehicle Charging</div>
+                    <div class="small text-muted">2024 - 2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="col">
+          <div class="card h-100 shadow border-0 rounded-4">
+              <div class="card-body p-4">
+                  <div class="vestel-electronics-text fw-bolder mb-2">Vestel Electronics</div>
+                  <div class="small fw-bolder">Maintenance</div>
+
+                  <div class="fst-italic">
+                      <div class="small text-muted">Product Line</div>
+                      <div class="small text-muted">2020 - 2021</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+  </div>
+
+                        </section>
                         <section>
                               <h2 class="as-page-titlar__heading typography-headline-elevatar">Education</h2>
                             <!-- Education Card 1-->
@@ -380,7 +519,7 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
       <div class="col">
           <div class="card h-100 shadow border-0 rounded-4">
               <div class="card-body p-4">
-                  <div class="text-secondary fw-bolder mb-2">Electronics and Communication Engineering</div>
+                  <div class="education-title-green fw-bolder mb-2">Electronics & Communication Engineering</div>
                   <div class="small fw-bolder">Kocaeli University</div>
 
                   <div class="fst-italic">
@@ -394,7 +533,8 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
       <div class="col">
         <div class="card h-100 shadow border-0 rounded-4">
             <div class="card-body p-4">
-                <div class="text-secondary fw-bolder mb-2 department-name">Electronics Technology</div>
+                <div class="education-title-green fw-bolder mb-2">Electronics Technology</div>
+
                 <div class="small fw-bolder">Ege University</div>
                 <div class="fst-italic">
                     <div class="small text-muted">Associate Degree</div>
@@ -409,7 +549,8 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sa
       <div class="col">
           <div class="card h-100 shadow border-0 rounded-4">
               <div class="card-body p-4">
-                  <div class="text-secondary fw-bolder mb-2">Electrical and Electronics Technology</div>
+                <div class="education-title-green fw-bolder mb-2">Electrical & Electronics Technology</div>
+
                   <div class="small fw-bolder">Gulay Kaynak Technical High School</div>
 
                   <div class="fst-italic">
